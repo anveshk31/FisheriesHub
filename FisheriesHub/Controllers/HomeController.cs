@@ -20,20 +20,20 @@ namespace FisheriesHub.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Help()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Your help page.";
 
             return View();
         }
-        public ActionResult Tab1()
+        public ActionResult FishingTech()
         {
             ViewBag.Message = "Waiting for content";
 
             return View();
         }
 
-        public ActionResult Tab2()
+        public ActionResult Trade()
         {
             ViewBag.Message = "Waiting for content again";
 
