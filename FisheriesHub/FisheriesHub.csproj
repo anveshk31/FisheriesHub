@@ -163,11 +163,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="images\fish1.jpg" />
-    <Content Include="images\fish2.jpg" />
-    <Content Include="images\fish3.jpg" />
-    <Content Include="images\fish4.jpg" />
-    <Content Include="images\fish5.jpg" />
+    <Content Include="images\big-amberjack.jpg" />
+    <Content Include="images\blue-marlin.jpg" />
+    <Content Include="images\CalmWater.jpg" />
+    <Content Include="images\cape-verde.jpg" />
+    <Content Include="images\sailfish.jpg" />
+    <Content Include="images\simple-blue.jpg" />
+    <Content Include="images\yellowfin-tuna.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -200,6 +202,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\FishingTech.cshtml" />
     <Content Include="Views\Home\Trade.cshtml" />
+    <Content Include="Views\Home\Help.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

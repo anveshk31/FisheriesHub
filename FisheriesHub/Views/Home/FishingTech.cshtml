@@ -2,106 +2,41 @@
 @{
     ViewBag.Title = "Tab1";
 }
-
-<h2>Tab1</h2>
+<style>
+    .item img {
+        width: 100%
+    }
+</style>
 <div>
-    @ViewBag.Message
+    <h2 style="text-align: center"> @ViewBag.Message</h2> 
 </div>
 
-<div id="my-carousel" class="carousel slide" data-ride="carousel">
+<div id="my-carousel" class="carousel slide" data-ride="carousel" style="width:auto">
     <ol class="carousel-indicators">
         <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
         <li data-target="#my-carousel" data-slide-to="1"></li>
         <li data-target="#my-carousel" data-slide-to="2"></li>
         <li data-target="#my-carousel" data-slide-to="3"></li>
         <li data-target="#my-carousel" data-slide-to="4"></li>
-        <li data-target="#my-carousel" data-slide-to="5"></li>
-        <li data-target="#my-carousel" data-slide-to="6"></li>
-        <li data-target="#my-carousel" data-slide-to="7"></li>
-        <li data-target="#my-carousel" data-slide-to="8"></li>
-        <li data-target="#my-carousel" data-slide-to="9"></li>
-        <li data-target="#my-carousel" data-slide-to="10"></li>
-        <li data-target="#my-carousel" data-slide-to="11"></li>
-        <li data-target="#my-carousel" data-slide-to="12"></li>
-        <li data-target="#my-carousel" data-slide-to="13"></li>
-        <li data-target="#my-carousel" data-slide-to="14"></li>
-        <li data-target="#my-carousel" data-slide-to="15"></li>
-        <li data-target="#my-carousel" data-slide-to="16"></li>
     </ol>
-    <div class="carousel-inner">
+    <div class="carousel-inner" style="width:auto">
         <div class="item active">
-            <img src="~/images/fish1.jpg" />
+            <img src="~/images/big-amberjack.jpg" />
             <div class="carousel-caption">
             </div>
         </div>
         <div class="item">
-            <img src="~/images/fish2.jpg" />
+            <img src="~/images/blue-marlin.jpg" />
             <div class="carousel-caption">
             </div>
         </div>
         <div class="item">
-            <img src="~/images/fish3.jpg" />
+            <img src="~/images/sailfish.jpg" />
             <div class="carousel-caption">
             </div>
         </div>
         <div class="item">
-            <img src="~/images/fish4.jpg" />
-            <div class="carousel-caption"></div>
-        </div>
-        <div class="item">
-            <img src="~/images/fish5.jpg" />
-            <div class="carousel-caption"></div>
-        </div>
-        <div class="item">
-            <img src="/images/HP.jpg" />
-            <div class="carousel-caption"></div>
-        </div>
-        <div class="item">
-            <img src="/images/lg.jpg" />
-            <div class="carousel-caption"></div>
-        </div>
-        <div class="item">
-            <img src="~/images/logitech.png" />
-            <div class="carousel-caption"></div>
-        </div>
-        <div class="item">
-            <img src="/images/microsoft.jpg" />
-            <div class="carousel-caption"></div>
-        </div>
-        <div class="item">
-            <img src="/images/msi.jpg" />
-            <div class="carousel-caption"></div>
-        </div>
-        <div class="item">
-            <img src="/images/seagate.jpg" />
-            <div class="carousel-caption"></div>
-        </div>
-        <div class="item">
-            <img src="/images/supermicro.jpg" />
-            <div class="carousel-caption"></div>
-        </div>
-        <div class="item">
-            <img src="/images/wd.jpg" />
-            <div class="carousel-caption"></div>
-        </div>
-        <div class="item">
-            <img src="~/images/logitech.png" />
-            <div class="carousel-caption"></div>
-        </div>
-        <div class="item">
-            <img src="~/images/trust.png" />
-            <div class="carousel-caption"></div>
-        </div>
-        <div class="item">
-            <img src="~/images/corsair.png" />
-            <div class="carousel-caption"></div>
-        </div>
-        <div class="item">
-            <img src="~/images/icidu.png" />
-            <div class="carousel-caption"></div>
-        </div>
-        <div class="item">
-            <img src="~/images/intel.png" />
+            <img src="~/images/yellowfin-tuna.jpg" />
             <div class="carousel-caption"></div>
         </div>
     </div>
@@ -111,4 +46,34 @@
     <a class="right carousel-control" href="#my-carousel" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
+</div>
+<div>
+    <p>
+        Blue marlin (Makaira nigricans)
+        Worldwide most of these ray finned fish are swimming in the ocean at Cape Verde. The blue marlin is family of the sailfish, and grows to a length of up to 4.5 meters. This predator can reach a speed of about 90 kilometers per hour, making it one of the fastest fish in the world.
+    </p>
+    <p>
+        Wahoo (Acanthocybium solandri)
+        One of the largest populations of wahoo fish are found in the sea near Cape Verde. The wahoo is a ray-finned fish from the family of the mackerel that can reach a length of 2.5 meters.
+
+        Sailfish (Istiophorus albicans)
+        Tou can recognize the sailfish, which can be up to 3.5 meters long, by a large dorsal fin. The fish can reach a maximum speed of 55 kilometers per hour and has like the blue marlin a spear-like beak.
+    </p>
+    <p>
+        Dorade (Sparus aurata)
+        The dorade is also known as sea bream and it is a fish that is served in many restaurants in Cape Verde. The dorade live in large numbers around the Cape Verde islands.
+
+        Yellowfin (Thunnus albacares)
+        The yellow fin tuna is part of the family of the mackerel. These tuna reaches a length of about two meters and is known for the great speed with which it can swim. This can be up to 70 kilometers per hour. It is named after the yellow color of its fin.
+    </p>
+    <p>
+        Horse mackerel (Caranx hippos)
+        This fish also comes from the family of the mackerels and is about one meter tall and weighing up to 40 kilograms.
+
+        Big amberjack (Seriola dumerili)
+        This fish comes from the family of the horse mackerel and can grow up to a length of two meters and can reach a weight of 70 kilogram.
+
+        Tiger shark (Galeocerdo cuvier) and other sharks
+        The tiger sharks are swimming in the warmer oceans of this planet. Far off the coast of Cape Verde you can spot these giant sharks. They hunt mainly at night and they can reach a length of 5.5 meters. It is more likely to catch a nurse shark (Ginglymostoma cirratum), hammerhead shark (Sphyrna lewini), lemon shark or even a large ray. These latter are usually harmless (!) for humans.
+    </p>
 </div>

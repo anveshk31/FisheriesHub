@@ -28,14 +28,14 @@ namespace FisheriesHub.Controllers
         }
         public ActionResult FishingTech()
         {
-            ViewBag.Message = "Waiting for content";
+            ViewBag.Message = "Fishing Trade";
 
             return View();
         }
 
         public ActionResult Trade()
         {
-            ViewBag.Message = "Waiting for content again";
+            ViewBag.Message = "Trade";
 
             return View();
         }
