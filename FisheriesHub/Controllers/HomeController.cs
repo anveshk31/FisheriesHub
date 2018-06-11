@@ -28,7 +28,7 @@ namespace FisheriesHub.Controllers
         }
         public ActionResult FishingTech()
         {
-            ViewBag.Message = "Fishing Trade";
+            ViewBag.Message = "Fishing Tech";
 
             return View();
         }
