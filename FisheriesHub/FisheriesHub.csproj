@@ -148,10 +148,17 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BusinessLayer\Products.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TradeController.cs" />
+    <Compile Include="DataAccess\MainConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Class.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductCustomerViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -203,10 +210,14 @@
     <Content Include="Views\Home\FishingTech.cshtml" />
     <Content Include="Views\Home\Trade.cshtml" />
     <Content Include="Views\Home\Help.cshtml" />
+    <Content Include="Views\Trade\Details.cshtml" />
+    <Content Include="Views\Trade\Create.cshtml" />
+    <Content Include="Views\Trade\Edit.cshtml" />
+    <Content Include="Views\Trade\Delete.cshtml" />
+    <Content Include="Views\Trade\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

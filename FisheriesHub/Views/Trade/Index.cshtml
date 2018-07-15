@@ -1,0 +1,99 @@
+﻿@model IEnumerable<FisheriesHub.Models.Product>
+
+@{
+    <h3>@ViewBag.Message</h3>
+}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" > </script >
+
+
+    <table class="table table-striped table-bordered" id="tblProducts">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ProductName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Unit)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th>
+                    @Html.DisplayName("Quantity")
+                </th>
+
+                <th>
+                    @Html.DisplayName("Sub Total")
+                </th>
+            </tr>
+        </thead>
+
+        @foreach (var item in Model)
+        {
+            <tbody>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Unit)
+                    </td>
+                    <td>
+                        <input type="text" name="PPRICE" id="PPRICE" value="@item.Price" class="form-control" style="display:inherit" readonly />
+                    </td>
+                    <td>
+                        @*  @Html.TextBox("quantity", null, new { @class = "form-control", placeholder = "Quantity", id = "quantity" })*@
+                        <input type="text" value="" name="QTY" class="form-control" id="QTY">
+                    </td>
+
+                    <td><input type="text" name="TOTAL" class="form-control TOTAL" readonly /></td>
+
+                </tr>
+                </tbody>
+                }
+<tfoot>
+    <tr>
+        <td>
+            <b>Total:</b>
+        <input type="text" class="form-control grdtot" value="" name="" />
+        </td>
+    </tr>
+</tfoot>
+</table>
+@Html.ActionLink("Place Order", "Create", "", new { @class = "btn btn-primary"  })
+
+<script type="text/javascript">
+    //function multiply() {
+    //    a = Number(document.getElementById('QTY').value);
+    //    console.log(a);
+    //    b = Number(document.getElementById('PPRICE').value);
+    //    console.log(b);
+    //    c = a * b;
+
+    //    document.getElementById('TOTAL').value = c;
+    //}
+    var $tblrows = $("#tblProducts tbody tr");
+    $tblrows.each(function (index) {
+        var $tblrow = $(this);
+        $tblrow.find('#QTY').on('change', function () {
+
+            var qty = $tblrow.find("[name=QTY]").val();
+            var price = $tblrow.find("[name=PPRICE]").val();
+            var subTotal = parseInt(qty) * parseFloat(price);
+            if (!isNaN(subTotal)) {
+
+                $tblrow.find('.TOTAL').val(subTotal.toFixed(2));
+                var grandTotal = 0;
+
+                $(".TOTAL").each(function () {
+                    var stval = parseFloat($(this).val());
+                    console.log(stval);
+                    grandTotal += isNaN(stval) ? 0 : stval;
+                    console.log(grandTotal);
+                });
+
+                $('.grdtot').val(grandTotal.toFixed(2));
+            }
+        });
+    });
+</script>
